@@ -1,0 +1,30 @@
+mkdir /config/gpio/led1
+cd /config/gpio/led1
+echo 0 > gpio_id
+echo 0x20000000 > pin_mask
+echo 0x20000000 > oe_mask
+echo 1 > enabled
+mkdir /config/gpio/led2
+cd /config/gpio/led2
+echo 0 > gpio_id
+echo 0x80000000 > pin_mask
+echo 0x80000000 > oe_mask
+echo 1 > enabled
+mkdir /config/gpio/BpStart
+cd /config/gpio/BpStart
+echo 1 > gpio_id
+echo 0x00000020 > pin_mask
+echo 0x00000000 > oe_mask
+echo 1 > enabled
+mkdir /config/gpio/Bp1
+cd /config/gpio/Bp1
+echo 1 > gpio_id
+echo 0x00000002 > pin_mask
+echo 0x00000000 > oe_mask
+echo 1 > enabled
+mkdir /config/gpio/Bp2
+cd /config/gpio/Bp2
+echo 1 > gpio_id
+echo 0x00000008 > pin_mask
+echo 0x00000000 > oe_mask
+echo 1 > enabled
